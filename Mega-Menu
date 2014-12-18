@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS Menu </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/megamenu.css">
+		
+	</head>
+	<body>
+		<ul class="nav">
+			<li>
+				<a href="#">Home</a>
+			</li>
+			<li>
+				<a href="#">About</a>
+				<div>
+					<div class="nav-column">
+						<a href="#"><h3>Officials</h3></a>
+						<ul>
+							<li><a href="#">The President</a></li>
+							<li><a href="#">Executive Committee</a></li>
+							<li><a href="#">Committee Chairs</a></li>
+							<li><a href="#">Board of Governers</a></li>
+							<li><a href="#">Past Presidents</a></li>
+						</ul>
+						<a href="#"><h3>Membership Criteria</h3></a>
+						<div class="nav-column">
+							<a href="#"><h3 class="press">Press</h3></a>
+							<ul>
+								<li><a href="#" class="press-menus">AAML In News</a></li>
+								<li><a href="#" class="press-menus">Press Releases</a></li>
+							</ul>
+						</div>
+						<div class="nav-column">
+							<a href="#"><h3 class="foundation">AAML Foundation</h3></a>
+							<ul>
+								<li><a href="#" class="foundation-menus">Officers</a></li>
+								<li><a href="#" class="foundation-menus">Directors</a></li>
+							</ul>
+						</div>
+					</div>
+					
+				
+				</div>
+			</li>
+			<li><a href="#">Follows</a></li>
+			<li><a href="#">Info Center</a></li>
+			<li><a href="#">Library</a></li>
+			<li><a href="#">Calender</a></li>
+			<li><a href="#">Find A Lawyer</a></li>
+		</ul>
+		
+		<!--Mobile menu html code!-->
+		<ul class="show-menu">
+			<label for="show-menu" class="show-menu">Main Menu
+				<!--<img src="images/mobilemenu-sm.png" class="btn-navbar"/>-->
+			</label>
+		
+			<input type="checkbox" id="show-menu" role="button">
+				<ul id="menu">
+					<li><a href="#">Women</a></li>
+					<li>
+						<a href="#">Men</a>
+						<ul class="hidden">
+							<li><a href="#">Clothings</a></li>
+							<li><a href="#">Bags</a></li>
+							<li><a href="#">Shoes</a></li>
+						</ul>
+					</li>
+					<li>
+					    <a href="#">Footwear</a>
+					    <ul class="hidden">
+							<li><a href="#">Gents Footwear</a></li>
+							<li><a href="#">Ladies Footwear</a></li>
+							<li><a href="#">Children Footwear</a></li>
+					    </ul>
+					</li>
+					<li>
+						<a href="#">Jewellery</a>
+						<ul class="hidden">
+							<li><a href="#">Immitation Jewellery</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Accessories</a></li>
+					<li><a href="#">Electronics</a></li>
+			
+				</ul>
+			</input>
+		</ul>
+	</body>
+</html>	
