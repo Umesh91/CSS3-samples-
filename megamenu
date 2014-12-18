@@ -1,0 +1,300 @@
+.nav,
+.nav a,
+.nav ul,
+.nav li,
+.nav div,
+.nav form,
+.nav input 
+{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+ 
+.nav a 
+{ 
+	text-decoration: none; 
+}
+ 
+.nav li 
+{ 
+  list-style: none; 
+}
+
+.nav 
+{
+    display: inline-block;
+    position: relative;
+    cursor: default;
+    z-index: 500;
+}
+ 
+.nav > li 
+{
+    display: block;
+    float: left;
+}
+
+.nav > li > a 
+{
+    position: relative;
+    display: block;
+    z-index: 510;
+    height: 54px;
+    padding: 0 20px;
+    line-height: 54px;
+	text-transform:uppercase;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: #fcfcfc;
+    text-shadow: 0 0 1px rgba(0,0,0,.35);
+    background: #372f2b;
+    border-left: 1px solid #4b4441;
+    border-right: 1px solid #312a27;
+    transition: all 1s ease;
+}
+
+.nav > li:hover > a 
+{ 
+   background: #4b4441; 
+}
+ 
+.nav > li:first-child > a 
+{
+    border-radius: 3px 0 0 3px;
+    border-left: none;
+}
+
+.nav > li > div 
+{
+    position: absolute;
+    display: block;
+    width: 90%;
+    top: 50px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    background: #F0F8FF;
+    border-radius: 0 0 3px 3px;
+    transition: all 1s ease 1s;
+}
+
+.nav > li:hover > div 
+{
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+}
+
+
+.nav .nav-column 
+{
+    float: left;
+    width: 90%;
+    padding: 2.5%;
+}
+ 
+.press 
+{
+    margin-right: 50px;
+}
+
+
+.nav .nav-column h3 
+{
+    margin: 20px 0 10px 0;
+    line-height: 18px;
+ 
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #372f2b;
+    text-transform: uppercase;
+}
+ 
+
+.nav .nav-column h3.press
+{
+  margin-left: 222px;  
+  margin-top: -219px;
+} 
+
+.nav .nav-column li a.press-menus
+{
+   margin-left: 200px;
+}
+
+.nav .nav-column h3.foundation
+{
+  margin-left: 180px;  
+  margin-top: -139px;
+} 
+
+.nav .nav-column li a.foundation-menus
+{
+   margin-left: 214px;
+}
+
+ 
+.nav .nav-column li a 
+{
+  display: block;
+  line-height: 26px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  color: #888888;
+}
+ 
+.nav .nav-column li a:hover 
+{
+  color: #666666; 
+}
+
+.show-menu
+{
+    display:none;
+}
+
+/*Mobile menu styles starting */
+.show-menu 
+{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	background: #282828;
+	text-align: center;
+	padding: 6px 0;
+	display: none;
+}
+/*Strip the ul of padding and list styling*/
+.show-menu  ul 
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: absolute;
+}
+
+/*Create a horizontal list with spacing*/
+.show-menu ul li 
+{
+	display:inline-block;
+	float: left;
+	margin-right: 1px;
+}
+
+/*Style for menu links*/
+.show-menu ul li a 
+{
+	display:block;
+	min-width:140px;
+	height: 40px;
+	text-align: center;
+	line-height: 50px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+	background: #282828;
+	text-decoration: none;
+}
+
+/*Hover state for top level links*/
+.show-menu ul li:active a 
+{
+	background: #181818;
+}
+
+/*Style for dropdown links*/
+.show-menu li:active ul a 
+{
+	background: #262626;
+	color: #fff;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+.show-menu li:active ul a:active 
+{
+	background: #19c589;
+	color: #fff;
+}
+
+/*Hide dropdown links until they are needed*/
+.show-menu li ul 
+{
+	display: none;
+}
+
+/*Make dropdown links vertical*/
+.show-menu li ul li 
+{
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+.show-menu li ul li a 
+{
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+.show-menu ul li a:hover + .hidden, .hidden:hover 
+{
+	display: block;
+}
+
+.show-menu .btn-navbar
+{
+   background-color: #040404
+}
+
+
+/*Hide checkbox*/
+ .show-menu input[type=checkbox]
+{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+.show-menu input[type=checkbox]:checked ~ #menu
+{
+    display: block;
+}
+
+/*Responsive styles starting*/
+@media screen and (max-width : 768px)
+{
+	.nav
+	{
+		display: none;
+	}
+	.show-menu
+	{
+		display: block;
+	}
+	
+	/*Make dropdown links appear inline*/
+	.show-menu ul 
+	{
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	.show-menu li 
+	{
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	.show-menu ul li, li a 
+	{
+		width: 100%;
+	}
+}
+
